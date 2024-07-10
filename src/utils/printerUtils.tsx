@@ -98,6 +98,4 @@ export const getDataFromFileSelected = async (fileSelected: File, pageRanges: st
             console.error('Invalid file format');
             return;
     }
-    // const absDataPath = "C:/Users/playe/Desktop/apps/synapxe/POC/test-qztray/src/assets/drug_report.pdf"
-    // const absPath = path.resolve(__dirname, dataPath)
 }

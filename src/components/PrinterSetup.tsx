@@ -10,7 +10,6 @@ import { getDataFromFileSelected } from '../utils/printerUtils';
 
 const PrinterSetup = (props: any) => { 
   const { clientPrinters, selectedPrinter, setSelectedPrinter, printersLoading, savedSettings, setSavedSettings } = props;
-  // const [fileUrl, setFileUrl] = useState<string>("https://neodynamic.com/temp/LoremIpsum.pdf");
   const [fileSelected, setFileSelected] = useState<File | undefined>(undefined);
   const [selectedTray, setSelectedTray] = useState<string>("");
   const [selectedSize, setSelectedSize] = useState<PrinterSize>({} as PrinterSize);

@@ -3,8 +3,6 @@ import { Printer, PrinterSize } from '../data/printerData';
 
 interface PrinterSettingsProps {
   clientPrinters: Printer[];
-  // fileUrl: string;
-  // setFileUrl: (url: string) => void;
   fileSelected: File | undefined;
   setFileSelected: (file: File) => void;
   selectedPrinter: string;
@@ -19,8 +17,6 @@ interface PrinterSettingsProps {
 
 const PrinterSettings: React.FC<PrinterSettingsProps> = ({
   clientPrinters,
-  // fileUrl,
-  // setFileUrl,
   fileSelected,
   setFileSelected,
   selectedPrinter,
@@ -70,16 +66,6 @@ const PrinterSettings: React.FC<PrinterSettingsProps> = ({
           onChange={handleFileChange}
         />
       </div>
-      {/* <div>
-        <label htmlFor="txtFile">File URL (.pdf .xls .xlsx) :</label>
-        <input
-          type="text"
-          name="txtFile"
-          id="txtFile"
-          value={fileUrl}
-          onChange={(e) => setFileUrl(e.target.value)}
-        />
-      </div> */}
       <div>
         <label htmlFor="lstPrinters">Printers:</label>
         <select

@@ -1,10 +1,6 @@
 interface PrintControlsProps {
   pageRanges: string;
   setPageRanges: (value: string) => void;
-  // printInReverseOrder: boolean;
-  // setPrintInReverseOrder: (value: boolean) => void;
-  // printAnnotations: boolean;
-  // setPrintAnnotations: (value: boolean) => void;
   printAsGrayscale: boolean;
   setPrintAsGrayscale: (value: boolean) => void;
 }
@@ -12,10 +8,6 @@ interface PrintControlsProps {
 const PrintControls: React.FC<PrintControlsProps> = ({
   pageRanges,
   setPageRanges,
-  // printInReverseOrder,
-  // setPrintInReverseOrder,
-  // printAnnotations,
-  // setPrintAnnotations,
   printAsGrayscale,
   setPrintAsGrayscale,
 }) => {
@@ -32,28 +24,6 @@ const PrintControls: React.FC<PrintControlsProps> = ({
             setPageRanges(e.target.value)}}
         />
       </div>
-      {/* <div>
-        <label>
-          <input
-            id="chkPrintInReverseOrder"
-            type="checkbox"
-            checked={printInReverseOrder}
-            onChange={(e) => setPrintInReverseOrder(e.target.checked)}
-          />
-          Print In Reverse Order?
-        </label>
-      </div>
-      <div>
-        <label>
-          <input
-            id="chkPrintAnnotations"
-            type="checkbox"
-            checked={printAnnotations}
-            onChange={(e) => setPrintAnnotations(e.target.checked)}
-          />
-          Print Annotations? <span><em>Windows Only</em></span>
-        </label>
-      </div> */}
       <div>
         <label>
           <input

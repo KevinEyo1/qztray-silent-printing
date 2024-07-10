@@ -25,8 +25,6 @@ export interface SavedSetting {
     selectedSize: PrinterSize;
     printRotation: number;
     pageRanges: string;
-    // printInReverseOrder: boolean;
-    // printAnnotations: boolean;
     printAsGrayscale: boolean;
   }
 
